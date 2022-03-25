@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="/ressources/css/connection.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <title>Connection</title>
+</head>
+
+<body>
+    <div id="page-div">
+        <a class="back-to-home" href="/">back to Home</a>
+        <div id="image-div">
+            <div id="main-div">
+                <div id="co-text">
+                    <p>Connection</p>
+                </div>
+                <div id="login">
+                    <div id="login-placement">
+                        <form action="/checkconnection" method="post">
+                            <div id="userentry">
+                                <div id="email">
+                                    <input type="text" name="mail" id="mail" placeholder="e-mail" maxlength="160"> {{if .AccStruct.Connection.Verification.Mail}}
+                                    <p class="error">MAIL DO NOT EXIST</p>
+                                    {{end}}
+                                </div>
+                                <div id="password">
+                                    <input type="password" name="pwd" id="pwd" placeholder="password" maxlength="64"> {{if .AccStruct.Connection.Verification.Password}}
+                                    <p class="error">WRONG PASSWORD</p>
+                                    {{end}}
+                                </div>
+                            </div>
+                            <div id="etc">
+                                <div id="div-acc">
+                                    <a href="/creation" id="createacc">Create Account</a>
+                                </div>
+                                <div id="submit">
+                                    <label id="labelsubmit">
+                                        <input type="submit" value="">
+                                    </input>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>

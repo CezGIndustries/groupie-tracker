@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel';
+}
+
+.main-page {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    background-color: #232323;
+    color: white;
+    font-family: 'Cinzel';
+}
+
+.banner-div {
+    height: 300px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 0.5px solid white;
+    background-position: left 0px bottom 165px;
+}
+
+.back-to-home {
+    margin-top: 40px;
+    margin: 20px;
+    font-size: 18px;
+    color: white;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    text-underline-offset: 0.4em;
+}
+
+.back-to-home:hover {
+    text-decoration-color: white;
+    text-underline-offset: 0.4em;
+    transition: 0.4s;
+}
+
+.friend-pp {
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
+
+.friend-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    width: 90%;
+    padding: 5px;
+}
+
+.FI {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.banner-div .banner {
+    width: 100%;
+}
+
+.FD {
+    border-left: 0.4px solid white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    gap: 10px;
+}
+
+.PP {
+    position: absolute;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    top: 200px;
+    left: calc(50% - 100px);
+    border-radius: 100%;
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+}
+
+.material-icons {
+    width: 100%;
+}
+
+.setting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 4px solid green; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.setting::-webkit-scrollbar {
+    width: 0;
+}
+
+.content {
+    /* border:4px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-top: 100px;
+    height: 100%;
+}
+
+.RP {
+    display: flex;
+    flex-direction: row;
+    /* border:4px solid blue; */
+    width: 80%;
+}
+
+.content .name {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.content-name {
+    display: flex;
+    flex-direction: row;
+    /* border: 4px solid blue; */
+    width: 100%;
+    height: 100%;
+}
+
+.liked-art {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 10px;
+    border-right: 0.5px solid white;
+    margin-bottom: 20px;
+}
+
+.liked-img-div {
+    gap: 10px;
+}
+
+.art-liké {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    height: 10%;
+}
+
+.right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.liked-img {
+    width: 150px;
+    border-radius: 100%;
+    margin: 15px;
+    transition: 0.4s;
+}
+
+.artist-a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.artist-a:hover .liked-img {
+    transform: scale(1.2);
+    -webkit-box-shadow: 0px 0px 15px 0.5px grey;
+    box-shadow: 0px 0px 15px 0.5px grey;
+}
+
+.not-friend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-color: #232323;
+}
+
+.hidden-friend {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.doesnt-exist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-color: #232323;
+}
+
+
+/* 
+.choose_name {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: #232323;
+}
+
+.choose_name-div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+}
+
+.choose_name-p {
+    font-size: 250%;
+    color: white;
+}
+
+.choose_name-div2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    width: 60%;
+    height: 60%;
+}
+
+.divName {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.usrname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Tmdp {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-crea-co {
+    border: 1px solid white;
+}
+
+.button-crea-co:hover {
+    box-shadow: black 5px 5px 5px;
+    background-color: transparent;
+    border: 1px solid #4FC0E8;
+    color: white;
+}
+
+#sub {
+    border: none;
+}
+
+#sub:hover {
+    border: 1px solid #4FC0E8;
+    background-color: transparent;
+}
+
+.divSubmit {
+    margin-top: 10%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    transition: 600ms;
+    border: none;
+    border: none;
+} */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputprofil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    font-size: 18px;
+    width: 300px;
+    border: none;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    transition: 600ms;
+    background-color: transparent;
+    color: white;
+}
+
+.inputprofil:focus {
+    background: yellowgreen;
+    background-color: transparent;
+    outline: none;
+}
+
+label {
+    color: white;
+    margin-bottom: 3%;
+}
+
+.inputsubmit {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-image: url("/ressources/img/icon-check.png");
+    background-size: 100%;
+    border-radius: 50%;
+    border: none;
+    transition: 350ms;
+    margin-top: 5px;
+}
+
+.inputsubmit:hover {
+    transform: scale(1.2);
+}
+
+.radioform {
+    display: block;
+}
